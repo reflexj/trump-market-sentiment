@@ -1,0 +1,25 @@
+# Environment
+.env
+*.env
+
+# Data (raw files not tracked)
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,44 @@
+# Trump Market Sentiment – Configuration
+
+data:
+  # Only include tweets from periods when Trump was in office
+  periods:
+    - start: "2017-01-20"
+      end:   "2021-01-20"
+      label: "term1"
+    - start: "2025-01-20"
+      end:   "2099-12-31"   # open-ended, clips to latest available data
+      label: "term2"
+
+  # Years to download from trump_tweet_data_archive
+  tweet_years: [2017, 2018, 2019, 2020, 2025]
+
+  # Market tickers (yfinance)
+  tickers:
+    SP500:  "^GSPC"
+    VIX:    "^VIX"
+    USDCHF: "CHF=X"
+    GOLD:   "GC=F"
+
+sentiment:
+  # Claude API scoring schema
+  score_range: [1, 10]   # 1 = very negative for markets, 10 = very positive
+  categories:
+    - "economy"
+    - "trade"
+    - "geopolitics"
+    - "domestic_politics"
+    - "other"
+  # Only score tweets flagged as market-relevant
+  filter_retweets: true
+
+analysis:
+  # Event windows (in trading hours after tweet)
+  event_windows:
+    - label: "1h"
+      hours: 1
+    - label: "1d"
+      hours: 24
+    - label: "3d"
+      hours: 72
+  significance_level: 0.05
