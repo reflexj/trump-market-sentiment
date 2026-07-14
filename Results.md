@@ -43,6 +43,20 @@ No category dummy reaches conventional significance in either specification, ind
 
 More positive tweets are associated with **higher** next-day VIX returns. The geopolitics category dummy is also significant (coef = 1.58, p = 0.038), while the other category is strongly negative (coef = -5.45, p < 0.001).
 
+### Example Tweets with the Largest Market Impact
+
+The table below shows the market-relevant original tweets (retweets and link-only posts excluded, one tweet per trading day) with the largest absolute next-day S&P 500 return in the sample:
+
+| Date | Tweet | Score | Category | S&P +1d | S&P +3d | VIX +1d |
+|------|-------|-------|----------|---------|---------|---------|
+| 2020-03-13 | "...the Secretary of the Treasury and the Secretary of Labor to issue regulations that will provide flexibility so that in no way will Small Businesses be hurt..." | 7 | economy | −11.98% | −11.54% | +43.0% |
+| 2020-03-22 | "CHINESE VIRUS FACT CHECK" | 2 | geopolitics | +9.38% | +17.55% | +0.1% |
+| 2020-03-12 | "I am fully prepared to use the full power of the Federal Government to deal with our current challenge of the CoronaVirus!" | 6 | economy | +9.29% | +1.96% | −23.4% |
+| 2020-03-14 | "BIGGEST STOCK MARKET RISE IN HISTORY YESTERDAY!" | 8 | economy | +6.00% | +0.97% | −8.2% |
+| 2020-06-10 | "Relief is on the way to Utah! I'm proud to send $187.18M in CARES Act funding to @RideUTA..." | 6 | economy | −5.89% | −3.87% | +48.0% |
+
+Two observations stand out. First, every entry falls in the Covid-19 crash and recovery period (February–June 2020), when daily volatility was extreme for reasons unrelated to any individual tweet. The tweets coincide with, rather than cause, these moves — a tweet-level illustration of the reverse-causality caveat discussed below. Second, sentiment and subsequent returns frequently point in opposite directions: the most positive tweet in the table (score 8, celebrating a record rally) preceded a much smaller gain, while the most negative one (score 2) preceded a +9.4% rally driven by the Federal Reserve's intervention announced the following day. This mirrors the negative score coefficient in the regressions above.
+
 ### Interpretation
 
 The negative relationship between tweet sentiment and subsequent S&P 500 returns is counterintuitive at first glance but consistent with several mechanisms:

@@ -13,7 +13,8 @@ Tweets are scored for market sentiment using the Claude API (1-10 scale), then m
 - **12,720 tweets** scored, of which **1,682 classified as market-relevant** (13%)
 - A higher sentiment score (more positive tweet) is associated with **lower S&P 500 returns** at both +1 day and +3 days horizons (p < 0.001)
 - More positive tweets are associated with **higher VIX** the following day (p < 0.01)
-- Full findings in [RESULTS.md](RESULTS.md)
+- The largest single-tweet market moves all cluster in the Covid-19 crash period — see [example tweets](Results.md#example-tweets-with-the-largest-market-impact)
+- Full findings in [Results.md](Results.md)
 
 ## Methodology
 
