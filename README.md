@@ -49,7 +49,7 @@ where $AR_t$ is the market return in the +1d or +3d window after each tweet. HC3
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/trump-market-sentiment.git
+git clone https://github.com/reflexj/trump-market-sentiment.git
 cd trump-market-sentiment
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
